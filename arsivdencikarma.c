@@ -3,7 +3,7 @@
 void arsivden_cikarma(char *arsiv_adi, char *hedef_dizin) {
     int fd = open(arsiv_adi, O_RDONLY);
     if (fd == -1) {
-        printf("Arşiv dosyası uygunsuz veya bozuk\n"); [cite: 25]
+        printf("Arşiv dosyası uygunsuz veya bozuk\n"); 
         return;
     }
 
@@ -21,7 +21,7 @@ void arsivden_cikarma(char *arsiv_adi, char *hedef_dizin) {
 
     struct stat st = {0};
     if (stat(hedef_dizin, &st) == -1) {
-        mkdir(hedef_dizin, 0700); [cite: 28]
+        mkdir(hedef_dizin, 0700); 
     }
 
     char *token = strtok(org_bolumu, "|");
