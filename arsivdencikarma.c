@@ -2,7 +2,6 @@
 
 void arsivden_cikarma(char *arsiv_adi, char *hedef_dizin) {
 
-    /
     const char *ext = strrchr(arsiv_adi, '.');
     if (!ext || strcmp(ext, ".sau") != 0) {
         printf("Arşiv dosyası uygunsuz veya bozuk!\n");
